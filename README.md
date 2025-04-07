@@ -24,11 +24,11 @@
 - **Example Usage:**
   - **Locally:**
     ```powershell
-    .\Setup-KernelDebugging.ps1 -HostIP "10.0.0.5" -Port 60000
+    .\Setup-KernelDebugging.ps1 -HostIP "192.168.50.1" -Port 50000
     ```
   - **Directly from GitHub:**
     ```powershell
-    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/Debuggee/Setup-KernelDebugging.ps1'))) -HostIP '10.0.0.5' -Port 60000 }"
+    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/Debuggee/Setup-KernelDebugging.ps1'))) -HostIP '192.168.50.1' -Port 50000 }"
     ```
 
 ## Debugger Scripts (Coming Soon)
