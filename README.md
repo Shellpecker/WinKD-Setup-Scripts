@@ -31,9 +31,31 @@
     powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/Debuggee/Setup-KernelDebugging.ps1'))) -HostIP '192.168.50.1' -Port 50000 }"
     ```
 
-## Debugger Scripts (Coming Soon)
+## Debugger Scripts
 
-...
+### Install-WindowsSDK.ps1
+
+- **Purpose:**  
+  Automatically downloads and installs the latest Windows SDK using Microsoft's stable FWLink. This script ensures you always get the most up-to-date version that fits your OS.
+
+- **Features:**
+  - **Administrative Check:** Automatically relaunches with elevated privileges if not already running as Administrator.
+  - **Latest SDK Download:** Uses a stable FWLink to download the latest Windows SDK installer.
+  - **Silent Installation:** Runs the installer silently (with `/quiet /norestart`), ensuring an unattended installation.
+  - **Cleanup:** Removes the installer file from the temporary folder after installation.
+
+- **Example Usage:**
+  - **Locally:**
+    ```powershell
+    .\Install-WindowsSDK.ps1
+    ```
+  - **Directly from GitHub:**
+    ```powershell
+    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/SDK/Install-WindowsSDK.ps1'))) }"
+    ```
+  
+    Note:
+    Ensure that you select the Debugging Tools for Windows component during the installation process, as this is required for kernel debugging.
 
 
 ## Security Notice
