@@ -51,7 +51,7 @@
     ```
   - **Directly from GitHub:**
     ```powershell
-    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/SDK/Install-WindowsSDK.ps1'))) }"
+    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/Debugger/Install-WindowsSDK.ps1'))) }"
     ```
   
     Note:
