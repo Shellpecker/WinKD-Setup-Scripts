@@ -28,7 +28,7 @@
     ```
   - **Directly from GitHub:**
     ```powershell
-    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/username/Windows-Kernel-Debugging-Setup/main/Setup-KernelDebugging.ps1'))) -HostIP '10.0.0.5' -Port 60000 }"
+    powershell -ExecutionPolicy Bypass -Command "& { . ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Shellpecker/WinKD-Setup-Scripts/refs/heads/main/Debuggee/Setup-KernelDebugging.ps1'))) -HostIP '10.0.0.5' -Port 60000 }"
     ```
 
 ## Debugger Scripts (Coming Soon)
