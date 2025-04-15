@@ -26,8 +26,14 @@ if (-not (Test-Path $ThemePath)) {
     Invoke-WebRequest -Uri $DownloadUrl -OutFile $ThemePath
 }
 
+# Updated symbol path to include Microsoft Symbol Server
+$SymbolPath = "srv*C:\Symbols*https://msdl.microsoft.com/download/symbols"
+
+# Debug key
+$DebugKey = "2b1i68bxp7pea.3t5g827tcava5.3bqaxa0qorrh5.dov2402b65qc"
+
 # WinDbg launch args
-$Arguments = "-k net:port=50000,key=none -Q -y C:\Symbols -WF `"$ThemePath`""
+$Arguments = "-k net:port=50000,key=$DebugKey -y `"$SymbolPath`" -Q -WF `"$ThemePath`""
 
 # Public desktop shortcuts
 $PublicDesktop = "C:\Users\Public\Desktop"
