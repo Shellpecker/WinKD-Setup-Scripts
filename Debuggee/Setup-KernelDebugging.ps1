@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory=$false)]
-    [string]$HostIP = "192.168.50.1",
+    [string]$HostIP = "192.168.123.1",
 
     [Parameter(Mandatory=$false)]
     [int]$Port = 50000
