@@ -28,7 +28,7 @@ bcdedit /set debugtype NET
 
 Write-Host "Configuring network debugging settings..."
 # Configure network kernel debugging using the provided IP and port
-bcdedit /set dbgsettings NET hostip:$HostIP port:$Port
+bcdedit /dbgsettings NET hostip:$HostIP port:$Port key:2b1i68bxp7pea.3t5g827tcava5.3bqaxa0qorrh5.dov2402b65qc
 
 Write-Host "Kernel debugging has been configured. The computer will now reboot."
 Restart-Computer -Force
