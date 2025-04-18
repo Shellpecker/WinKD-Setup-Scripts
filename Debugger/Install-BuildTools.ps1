@@ -46,6 +46,7 @@ if ($msbuildPath) {
 
     Write-Host "`n📍 MSBuild.exe found at: $msbuildPath"
     Write-Host "💡 You may need to restart your terminal or log off/log on to use it globally."
-} else {
+} 
+else {
     Write-Host "❌ MSBuild.exe not found under $installPath. Please check the installation."
 }
